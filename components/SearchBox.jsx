@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React, {useState} from 'react'
 // import cities from '../lib/cities.json'
 import axios from 'axios';
+import { getSlug } from '../lib/helpers';
 
 export default function SearchBox() {
     const [query, setQuery] = useState('');
@@ -34,10 +35,6 @@ export default function SearchBox() {
             matchedCities = res.data
         }
         setResults(matchedCities)
-    }
-
-    const getSlug = (cityName, cityId) => {
-        return `${cityName.toLowerCase().replace(' ', '-')}-${cityId}`
     }
 
     return (
