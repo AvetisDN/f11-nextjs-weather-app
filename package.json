@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "axios": "^0.25.0",
+    "chart.js": "^3.7.0",
     "cities.json": "^1.1.5",
     "dotenv": "^14.2.0",
     "global": "^4.4.0",
